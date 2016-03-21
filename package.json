@@ -1,0 +1,19 @@
+{
+  "name": "contact",
+  "version": "1.0.0",
+  "description": "contact form",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/tinydinosaurs/ironyard_contact_form.git"
+  },
+  "author": "me!",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "normalize": "^0.3.1"
+  }
+}
