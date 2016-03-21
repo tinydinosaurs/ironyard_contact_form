@@ -9,30 +9,29 @@ var website = $('#website');
 var message = $('#message');
 
 function validate() {
-	// error message variables
-	// var empty = " cannot be left empty";
-	// var emailError = "Email must contain an '@'";
-	// var websiteError = "Website must start with http://";
+	$('p').html('')
 	
-	inputField.each(function(index) {
-		if($(this).val() === '') {
-			$('p').eq(index).html(index + ' cannot be blank');
-		}
-	});
-	
-	if (email.val().includes('@') === false) {
-		$('#email_error').html("Email must contain an '@'")
+	if(userName.val() === '') {
+		$('#name_error').html('Name cannot be left empty');
 	}
 
+	  if(email.val() === '') {
+		$('#email_error').html('Email cannot be left empty');
+	} else if(email.val().includes('@') === false) {
+		$('#email_error').html("Email must contain an '@'")
+	} 
+
+	  if(website.val() === '') {
+		$('#website_error').html('Website cannot be left empty');
+	} else if(website.val().includes('http://') === false) {
+		$('#website_error').html("Website must start with http://")
+	}
+
+	  if(message.val() === '') {
+		$('#message_error').html('Message cannot be left empty');
+	}
 }
-
-	// if(inputField.val() === '') {
-	// return $('p').html($(this).attr('name') + 'cannot be blank');}
-
-	// if(inputField.val() === '') {
-	// return $('p').html('cannot be blank');
-
-	// }
+	
 
 form.on('submit', function(e) {
 	e.preventDefault();
@@ -40,8 +39,13 @@ form.on('submit', function(e) {
 	validate()
 });
 
-	// $("input").each(function( index ) {
+
+
+
+////////// WHY U NO WORK WITH OTHER IF STATEMENTS?
+	// inputField.each(function(index) {
+	// 	$('p').eq(index).html("");
 	// 	if($(this).val() === '') {
-	// 		return $('p').html('cannot be blank');
+	// 		$('p').eq(index).html(index + ' cannot be blank');
+		
 	// 	}
-	// }
