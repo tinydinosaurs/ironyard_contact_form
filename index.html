@@ -3,29 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<h1>Contact Us</h1>
 	<form action="">
-			<label for="name">Name</label>
-			<input type="text" id="user_name" name="Name" class="requred" minlength="1">
-			<p class= "error" id="name_error">placeholder</p>
-			
-			<label for="email">Email</label>
-			<input type="text" id="email" class="requred" minlength="1">
-			<p class= "error" id="email_error">placeholder</p>
+		<h1>Contact Us</h1>
 
-			<label for="website">Website</label>
-			<input type="text" id="website" class="requred" minlength="1">
-			<p class= "error" id="website_error">placeholder</p>
-			
-			<label for="message">Message</label>
-			<input type="textarea" id="message" class="requred" minlength="1">
-			<p class= "error" id="message_error">placeholder</p>
-			
-			<button type='submit' id="btn">Submit</button>
+		<label for="name">Name</label>
+		<input type="text" id="user_name" name="Name">
+		<p class= "error" id="name_error"></p>
+		
+		<label for="email">Email</label>
+		<input type="text" id="email">
+		<p class= "error" id="email_error"></p>
+
+		<label for="website">Website</label>
+		<input type="text" id="website">
+		<p class= "error" id="website_error"></p>
+		
+		<label for="message">Message</label>
+		<textarea type="textarea" id="message"></textarea>
+		<p class= "error" id="message_error"></p>
+		
+		<button type='submit' id="btn">Submit</button>
+		<p id="thanks"></p>
 		</form>	
 	
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
