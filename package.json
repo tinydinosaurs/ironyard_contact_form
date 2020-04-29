@@ -13,7 +13,7 @@
   "author": "me!",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^2.2.2",
+    "jquery": "^3.5.0",
     "normalize": "^0.3.1"
   }
 }
